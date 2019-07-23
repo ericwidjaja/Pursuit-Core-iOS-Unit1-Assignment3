@@ -94,14 +94,15 @@ while calcProject {
                 print("Sorry, wrong Input")
                 regularCalculator()
             }
-            if inputOperator == "?" {
-                guessOperator( x: operand1, y: operand2)
-            }
+            let inputOperator = (userInput[1])
+//            if inputOperator == "?" {
+//                guessOperator( x: operand1, y: operand2)
+//            }
             if inputOperator != "+" && inputOperator != "-" && inputOperator != "*" && inputOperator != "/" {
                 print("Error, please use the right operator sign")
                 regularCalculator()
             }
-            let inputOperator = (userInput[1])
+            
             print("\(operand1) \(inputOperator) \(operand2) = \(mathOperation(num1: operand1, operatorInput: inputOperator, num2: operand2))")
         
         calcAgain()
